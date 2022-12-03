@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>inter invest</title>
+    </head>
+<body>
+    <h1>
+        <a href="https://github.com/jasserYahyaoui/inter-invest" target="_blank">Inter invest</a>
+    </h1>
+    <p>
+        Inter invest test mini projet.<br>
+    </p>
+
+    <ul>
+        <li><a href="http://${NGINX_SYMFONY_SERVER_NAME}" target="_blank">Symfony</a></li>
+        <li><a href="http://localhost:${KIBANA_PORT}/app/kibana_overview/#/" target="_blank">Kibana</a></li>
+        <li><a href="http://localhost:8080/" target="_blank">phpmyadmin</a></li>
+    </ul>
+</body>
+</html>

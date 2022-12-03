@@ -1,0 +1,10 @@
+# volumes
+/docker/logs
+/docker/elk
+/docker/.db
+
+/.env.*
+
+# IDE setting
+## PhpStorm
+.idea

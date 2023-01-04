@@ -1,0 +1,5 @@
+App\Entity\NotificationCollection:
+  properties:
+    notifications:
+      type: array<App\Entity\Notification>
+      serialized_name: notifications

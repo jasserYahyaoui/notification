@@ -1,0 +1,11 @@
+App\Entity\Content:
+    properties:
+        title:
+            type: string
+            serialized_name: title
+        album:
+            type: App\Entity\Album
+            serialized_name: album
+        playlist:
+            type: App\Entity\Playlist
+            serialized_name: playlist

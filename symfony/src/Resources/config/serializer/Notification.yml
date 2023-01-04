@@ -1,0 +1,20 @@
+App\Entity\Notification:
+    properties:
+        name:
+            type: string
+            serialized_name: name
+        createdAt:
+            serialized_name: createdAt
+            type: DateTime<'Y-m-d\TH:i:sP'>
+        content:
+            type: App\Entity\Content
+            serialized_name: content
+        isRead:
+            type: bool
+            serialized_name: isRead
+        validFrom:
+            serialized_name: validFrom
+            type: DateTime<'Y-m-d\TH:i:sP'>
+        validTo:
+            serialized_name: validTo
+            type: DateTime<'Y-m-d\TH:i:sP'>

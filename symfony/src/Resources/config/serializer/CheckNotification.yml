@@ -1,0 +1,5 @@
+App\Entity\CheckNotification:
+    properties:
+        isRead:
+            type: bool
+            serialized_name: is_read

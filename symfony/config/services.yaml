@@ -22,3 +22,16 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    Doctrine\ORM\EntityManagerInterface: '@doctrine.orm.entity_manager'
+
+    App\EventSubscriber\DataSubscriber:
+        arguments:
+            $normalizers: !tagged deezer.api.normalizer
+        tags:
+            - { name: jms_serializer.event_subscriber }
+
+# All denormalizer repository
+    App\Resources\config\denormalizer\:
+        resource: "%kernel.project_dir%/src/Resources/config/denormalizer/"
+        tags: [deezer.api.normalizer]

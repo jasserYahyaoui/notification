@@ -1,0 +1,11 @@
+App\Entity\NotificationStat:
+    properties:
+        countRead:
+            type: int
+            serialized_name: countRead
+        countUnread:
+            type: int
+            serialized_name: countUnread
+        countTotal:
+            type: int
+            serialized_name: allNotifications
